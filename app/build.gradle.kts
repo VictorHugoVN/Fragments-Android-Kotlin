@@ -7,6 +7,8 @@ android {
     namespace = "com.example.trabalho_fragments"
     compileSdk = 34
 
+
+
     defaultConfig {
         applicationId = "com.example.trabalho_fragments"
         minSdk = 24
@@ -33,6 +35,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    viewBinding {
+        viewBinding.isEnabled = true
+    }
+
 }
 
 dependencies {
@@ -41,6 +48,8 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
+    implementation("androidx.databinding:viewbinding:7.0.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")

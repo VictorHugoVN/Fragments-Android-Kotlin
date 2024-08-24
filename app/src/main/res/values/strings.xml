@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">trabalho_fragments</string>
+    <string name="title">Título</string>
+    <string name="description">Descrição</string>
 </resources>
