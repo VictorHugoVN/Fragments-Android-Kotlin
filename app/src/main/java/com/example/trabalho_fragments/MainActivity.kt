@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val buttonList = findViewById<Button>(R.id.buttonMainA)
 
         buttonList.setOnClickListener {
-            val intentRecycler = Intent(context, ListView::class.java)
+            val intentRecycler = Intent(context, ListV::class.java)
             intentRecycler.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intentRecycler)
         }

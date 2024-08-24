@@ -21,7 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListView" android:exported="true"/>
+        <activity android:name=".ListV" android:exported="true"/>
     </application>
 
 </manifest>
