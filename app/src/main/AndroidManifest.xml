@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListV" android:exported="true"/>
+        <activity android:name=".Recycler" android:exported="true"/>
     </application>
 
 </manifest>

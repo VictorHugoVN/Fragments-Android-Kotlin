@@ -15,9 +15,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val buttonList = findViewById<Button>(R.id.buttonMainA)
+        val buttonRec = findViewById<Button>(R.id.buttonMainB)
 
         buttonList.setOnClickListener {
-            val intentRecycler = Intent(context, ListV::class.java)
+            val intentList = Intent(context, ListV::class.java)
+            intentList.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intentList)
+        }
+
+        buttonRec.setOnClickListener {
+            val intentRecycler = Intent(context, Recycler::class.java)
             intentRecycler.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intentRecycler)
         }
