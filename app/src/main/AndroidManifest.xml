@@ -23,6 +23,7 @@
         </activity>
         <activity android:name=".ListV" android:exported="true"/>
         <activity android:name=".Recycler" android:exported="true"/>
+        <activity android:name=".MyFragment" android:exported="true"/>
     </application>
 
 </manifest>

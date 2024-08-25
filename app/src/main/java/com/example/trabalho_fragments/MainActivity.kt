@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val buttonList = findViewById<Button>(R.id.buttonMainA)
         val buttonRec = findViewById<Button>(R.id.buttonMainB)
+        val buttonFragment = findViewById<Button>(R.id.buttonMainC)
 
         buttonList.setOnClickListener {
             val intentList = Intent(context, ListV::class.java)
@@ -27,6 +28,12 @@ class MainActivity : AppCompatActivity() {
             val intentRecycler = Intent(context, Recycler::class.java)
             intentRecycler.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intentRecycler)
+        }
+
+        buttonFragment.setOnClickListener {
+            val intentFragment = Intent(context, MyFragment::class.java)
+            intentFragment.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intentFragment)
         }
 
 
