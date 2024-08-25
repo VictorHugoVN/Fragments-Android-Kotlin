@@ -1,18 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/card_view_bg"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:padding="16dp"
     app:layout_constraintBottom_toTopOf="@+id/materialToolbarRecycler"
     app:layout_constraintTop_toBottomOf="@+id/buttonRecycler"
     >
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:layout_height="wrap_content"
-        android:textSize="18sp" />
+        >
+        
+        <TextView
+            android:id="@+id/txt_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="F"
+            />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/txt_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/darkGray"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/txt_icon"
+            android:layout_alignTop="@+id/txt_icon"
+            android:text="Facebook"
+            />
+
+        <TextView
+            android:id="@+id/txt_subject"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_user"
+            android:layout_alignStart="@+id/txt_user"
+            android:textSize="16sp"
+            android:textColor="@color/darkGray"
+            android:text="Facebook Facebook Facebook Facebook Facebook Facebook"
+            />
+        
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
