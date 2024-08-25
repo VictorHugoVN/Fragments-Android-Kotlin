@@ -4,9 +4,9 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
 import android.widget.ArrayAdapter
-import android.widget.Button
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ListV : AppCompatActivity() {
 
@@ -17,7 +17,7 @@ class ListV : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.list_view_layout)
-        val buttonBackMain = findViewById<Button>(R.id.buttonListBackMain)
+        val buttonBackMain = findViewById<FloatingActionButton>(R.id.buttonListBackMain)
 
         listView = findViewById<ListView>(R.id.list_view)
         // use arrayadapter and define an array

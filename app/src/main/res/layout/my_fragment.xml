@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -21,27 +21,47 @@
 
 
     <FrameLayout
-        android:id="@+id/fragment1"
+        android:id="@+id/fragment_main"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="76dp"
+        android:layout_marginEnd="111dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialToolbarMyFragments" />
 
-    <FrameLayout
-        android:id="@+id/fragment2"
+
+
+    <!--
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_main"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="404dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonFragmentBackMain"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.162"
-        app:layout_constraintStart_toStartOf="parent">
+        android:name="com.example.trabalho_fragments.FragmentUnity"
+        android:layout_below="@+id/materialToolbarMyFragments"
+         />
+-->
 
-    </FrameLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonFragmentBackMain"
+        android:src="@drawable/backtomain"
+        android:backgroundTint="@color/azulMedio"
+        android:foregroundTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:contentDescription="Back to Main"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content"/>
 
+
+    <!--
     <Button
         android:id="@+id/buttonFragmentBackMain"
         android:layout_width="wrap_content"
@@ -54,5 +74,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.956" />
+-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

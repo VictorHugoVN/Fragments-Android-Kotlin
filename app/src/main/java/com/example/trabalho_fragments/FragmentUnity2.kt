@@ -7,12 +7,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
 
-
-class FragmentUnity : Fragment() {
-
+class FragmentUnity2 : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_unity, container, false)
+        return inflater.inflate(R.layout.fragment_unity2, container, false)
     }
 }
